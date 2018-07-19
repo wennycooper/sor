@@ -4,9 +4,8 @@ This is an example to use PCL StatisticsOutlierRemoval to remove laserscan error
 # Demo
 https://youtu.be/XfKqD-EItMc
 
-Red are points before filtered
-
-Green are points after filtered
+* Red are points before filtered
+* Green are points after filtered
 
 # Usage
     // launch lidar driver and laser messages are on /scan topic
@@ -20,4 +19,8 @@ Green are points after filtered
     $ rviz
     // add display to show cloud_before_filtered topic
     // add display to show cloud_after_filtered topic
+
+# References
+http://pointclouds.org/documentation/tutorials/statistical_outlier.php#statistical-outlier-removal
+http://wiki.ros.org/pcl/Tutorials
 
