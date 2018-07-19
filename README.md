@@ -1,5 +1,5 @@
 # SOR
-This is an example to use PCL StatisticsOutlierRemoval to remove laserscan error points
+This is an example to use PCL StatisticsOutlierRemoval filter to remove laserscan error points
 
 # Demo
 https://youtu.be/XfKqD-EItMc
