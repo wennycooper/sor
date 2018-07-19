@@ -1,7 +1,11 @@
-# StatisticsOutlierRemoval to remove laser error points
+# SOR
+This is a example code to use PCL StatisticsOutlierRemoval function to remove laserscan error points
 
-# Result
+# Demo
+https://youtu.be/XfKqD-EItMc
+
 Red are points before filtered
+
 Green are points after filtered
 
 # Usage
