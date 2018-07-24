@@ -3,6 +3,7 @@ This is an example to use PCL StatisticsOutlierRemoval filter to remove lasersca
 
 # Demo
 https://youtu.be/XfKqD-EItMc
+
 https://youtu.be/ev6Rf_WXfQM
 
 * Green/White are points before filtered
