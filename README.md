@@ -1,11 +1,12 @@
 # SOR
-This is an example to use PCL StatisticsOutlierRemoval filter to remove laserscan error points
+This is an example to use PCL StatisticsOutlierRemoval filter to remove laserscan noise points
 
 # Demo
 https://youtu.be/XfKqD-EItMc
+https://youtu.be/ev6Rf_WXfQM
 
-* Red are points before filtered
-* Green are points after filtered
+* Green/White are points before filtered
+* Res are points after filtered
 
 # Usage
     // launch lidar driver and laser messages are on /scan topic
