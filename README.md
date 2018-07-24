@@ -24,5 +24,6 @@ https://youtu.be/ev6Rf_WXfQM
 
 # References
 http://pointclouds.org/documentation/tutorials/statistical_outlier.php#statistical-outlier-removal
+
 http://wiki.ros.org/pcl/Tutorials
 
