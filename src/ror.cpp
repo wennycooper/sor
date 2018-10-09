@@ -8,7 +8,7 @@
 #include <pcl_conversions/pcl_conversions.h>
 #include <pcl/point_cloud.h>
 #include <pcl/point_types.h>
-#include <pcl/filters/statistical_outlier_removal.h>
+#include <pcl/filters/radius_outlier_removal.h>
 
 
 ros::Publisher cloud_pub_before_filtered;
@@ -36,12 +36,12 @@ void laserScanCallback(const sensor_msgs::LaserScanConstPtr& message)
   pcl::PCLPointCloud2 cloud_filtered;
   pcl_conversions::toPCL(cloud_msg, *cloud);
 
-  // SOR
-  pcl::StatisticalOutlierRemoval<pcl::PCLPointCloud2> sor;
-  sor.setInputCloud(cloudPtr);
-  sor.setMeanK(5);
-  sor.setStddevMulThresh (0.3);
-  sor.filter(cloud_filtered);
+  // ROR
+  pcl::RadiusOutlierRemoval<pcl::PCLPointCloud2> ror;
+  ror.setInputCloud(cloudPtr);
+  ror.setRadiusSearch(0.8);
+  ror.setMinNeighborsInRadius(2);
+  ror.filter(cloud_filtered);
 
   // convert to PCL_ros
   sensor_msgs::PointCloud2 cloud_filtered_msg;
@@ -61,7 +61,7 @@ void laserScanCallback(const sensor_msgs::LaserScanConstPtr& message)
 
 int main(int argc, char **argv)
 {
-  ros::init(argc, argv, "sor");
+  ros::init(argc, argv, "ror");
 
   ros::NodeHandle nh;
 
